@@ -1,0 +1,230 @@
+.app-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 0.8fr;
+  height: 100vh;
+}
+
+/* ===================== LEFT PANEL ===================== */
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 1.5rem;
+  border-radius: 12px;
+}
+
+
+.intro{
+  background-color: #27272A;
+  border-radius: 12px;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.intro h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.intro h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.contact-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+.contact-link:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+/* --- Tecnologías --- */
+.tecnologias-stack {
+  background-color: #27272A;    
+  border-radius: 12px;
+  padding: 1rem 2rem;
+}
+
+.tecnologias-stack h3 {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.tecnologias-icons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tech-card {
+  background-color: #1e232a;
+  padding: 0.8rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tech-card:hover {
+  transform: rotateX(10deg) rotateY(-8deg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.tech-card img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+/* --- Bottom Info --- */
+.bottom-info {
+  background-color: #27272A;
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.email {
+  margin-top: 0.4rem;
+}
+
+/* ===================== CENTER PANEL ===================== */
+.center-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 1.5rem;
+  border-radius: 12px;
+  padding: 1rem 0;
+}
+
+.profile-img {
+  width: 85%;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Botones sociales debajo de la imagen --- */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-btn {
+  width: 55px;
+  height: 55px;
+  background-color: #22272e;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.social-btn img {
+  width: 28px;
+  height: 28px;
+}
+
+.social-btn.linkedin:hover {
+  background-color: #0077b5;
+  transform: scale(1.1);
+}
+
+.social-btn.github:hover {
+  background-color: #333;
+  transform: scale(1.1);
+}
+
+/* ===================== RIGHT PANEL ===================== */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+}
+
+.menu li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu li:hover {
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+.cv-btn {
+  background-color: #1c2128;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.cv-btn:hover {
+  background-color: var(--accent);
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Ubicación (Right Panel) */
+.location-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.ubicacion-img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(0.7);
+}
+
+.location {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin: 0;
+}
