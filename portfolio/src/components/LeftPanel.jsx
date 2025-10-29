@@ -3,6 +3,8 @@ import python from '../assets/python.png'
 import unity from '../assets/unity.png'
 import C from '../assets/C.png'
 import fastapi from '../assets/FastAPI.png'
+import idiomas from '../assets/idiomas.png'
+import mail from '../assets/gmail.png'
 
 const LeftPanel = () => {
   return (
@@ -14,7 +16,7 @@ const LeftPanel = () => {
         <a href="#" className="contact-link">Contáctame →</a>
       </div>
 
-      {/* Tecnologías (fuera del bloque de intro) */}
+      {/* Tecnologías */}
       <div className="tecnologias-stack">
         <h3>TECNOLOGÍAS</h3>
         <div className="tecnologias-icons">
@@ -25,11 +27,20 @@ const LeftPanel = () => {
         </div>
       </div>
 
-      {/* Idiomas y mail */}
-      <div className="bottom-info">
-        <div className="languages">
-          <span>English</span> | <span>Spanish</span>
+      {/* Idiomas */}
+      <div className="idiomas-block">
+        <div className="idiomas-left">
+          <button className="idioma-btn active">Español</button>
+          <div className="idioma-icon">
+            <img src={idiomas} alt="Icono idiomas" />
+          </div>
+          <button className="idioma-btn">English</button>
         </div>
+      </div>
+
+      {/* Email */}
+      <div className="mail-block">
+        <img src={mail} alt="Mail" className="mail-icon" />
         <p className="email">tomashauser2007@gmail.com</p>
       </div>
     </div>
